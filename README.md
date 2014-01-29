@@ -1,13 +1,13 @@
-# Sample code to demonstrate missing EOF notifications
+## Sample code to demonstrate missing EOF notifications
 
-## Summary
+### Summary
 
 When using the `NSNotificationCenter` with `NSFileHandle`
 `readInBackgroundAndNotify`, a process that waits for a writer
 to close a FIFO can block forever, as it does not receive an
 event containing a zero-length `NSData` object.
 
-## Contents
+### Contents
 
     Makefile  - to build echof program
     README.md - this file
@@ -15,11 +15,11 @@ event containing a zero-length `NSData` object.
     kit.h     - precompiled header
     test.py   - test client
 
-## To Build
+### To Build
 
     make
 
-## To Run
+### To Run
 
     mkfifo f1 f2
     ./echof
