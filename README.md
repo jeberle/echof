@@ -3,9 +3,11 @@
 ### Summary
 
 When using the `NSNotificationCenter` with `NSFileHandle`
-`readInBackgroundAndNotify`, a process that waits for a writer
-to close a FIFO can block forever, as it does not receive an
-event containing a zero-length `NSData` object.
+`readInBackgroundAndNotify`, a process that waits for a writer to close a FIFO
+can block forever, as it does not receive an event containing a zero-length
+`NSData` object.
+
+See **echoud** for a UNIX domain socket equivalent that behaves properly.
 
 ### Contents
 
