@@ -7,7 +7,7 @@ When using the `NSNotificationCenter` with `NSFileHandle`
 can block forever, as it does not receive an event containing a zero-length
 `NSData` object.
 
-See [echoud](/jeberle/echoud) for a UNIX domain socket equivalent that behaves properly.
+See [echoud](https://github.com/jeberle/echoud) for a UNIX domain socket equivalent that behaves properly.
 
 ### Contents
 
