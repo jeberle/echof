@@ -21,12 +21,12 @@ event containing a zero-length `NSData` object.
 
 ## To Run
 
-   mkfifo f1 f2
-   ./echof
+    mkfifo f1 f2
+    ./echof
 
-   ... in another console ...
-
-   ./test.py 5
+    ... in another console ...
+    
+    ./test.py 5
 
 In my tests, I get about 3 good runs (such that both programs exit normally)
 until `echof` hangs, waiting for the client to close its write end, which it
@@ -34,6 +34,6 @@ obviously does by not running anymore.
 
 When run with `./test.py 1` it _always_ hangs.
 
-I don't think this has anything to do w/ buffering, a common gremlin w/ this sort
-of work.
+I trust this has nothing to do w/ buffering, but I have made mistakes in the
+past :)
 
